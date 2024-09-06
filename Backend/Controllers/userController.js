@@ -126,7 +126,7 @@ const googleRegister = asyncHandler(async (req, res) => {
             generateToken(res, userExists._id);
 
             res.json({
-                status: true,
+                status: false,
                 _id: userExists._id,
                 firstName: userExists.firstName,
                 lastName: userExists.lastName,

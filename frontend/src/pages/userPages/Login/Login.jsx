@@ -55,7 +55,7 @@ function Login() {
           toast.success("Login Successful");
           navigate("/");
         } else {
-          console.log(responseFromApiCall)
+          console.log(responseFromApiCall);
           toast.error("You are blocked by admin");
         }
       } catch (err) {
@@ -163,7 +163,7 @@ function Login() {
                 </p>
               </Link>
               <div>
-                <GoogleOAuthProvider clientId="739844887110-31r8fl05aaj82rluejrjh85rdbfuno1e.apps.googleusercontent.com">
+                <GoogleOAuthProvider clientId="267836602539-diu2nc04smfqjj4q28ip8ts2v8n9bv88.apps.googleusercontent.com">
                   <GoogleLogin
                     onSuccess={(credentialResponse) => {
                       const decoded = jwtDecode(credentialResponse.credential);
