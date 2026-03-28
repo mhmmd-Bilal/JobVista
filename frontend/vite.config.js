@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:4000', // Update with your EC2 instance's public IP address or domain name
+        target: 'https://jobvista-backend-f2zl.onrender.com', // Update with your EC2 instance's public IP address or domain name
         changeOrigin: true,
       },
     },
